@@ -29,7 +29,8 @@ CREATE TABLE tabela_financiamentos (
     valor_financiado DECIMAL(10,2),
     taxa_juros DECIMAL(4,4),
     prazo INT,
-    status_pagamento ENUM('pago', 'pendente', 'em atraso', 'parcialmente pago', 'cancelado')
+    status_pagamento ENUM('pago', 'pendente', 'em atraso', 'parcialmente pago', 'cancelado'),
+    FOREIGN KEY (cliente_id) REFERENCES tabela_clientes(cliente_id)
 );
 
 CREATE TABLE tabela_veiculos (
