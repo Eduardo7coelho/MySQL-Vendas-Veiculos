@@ -1,5 +1,4 @@
 @echo off
-REM Script para fazer backup completo do esquema sucos_vendas
 
 REM Definir variáveis
 for /f "tokens=1-4 delims=/ " %%a in ('date /t') do (
